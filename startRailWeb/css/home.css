@@ -1,0 +1,191 @@
+body{
+    margin: 0px;
+}
+
+#home_root{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);}
+
+#navigation_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+}
+
+#navigation_role{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    color: rgb(236, 236, 236);
+    font-size: large;
+    cursor: pointer;
+    
+}
+#navigation_role:hover{
+    background-color: rgb(26, 26, 26);
+}
+
+#navigation_Relic{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    color: rgb(236, 236, 236);
+    font-size: large;
+    cursor: pointer;
+}
+#navigation_Relic:hover{
+    background-color: rgb(26, 26, 26);
+}
+
+#navigation_Light_Cones{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    color: rgb(236, 236, 236);
+    font-size: large;
+    cursor: pointer;
+}
+#navigation_Light_Cones:hover{
+    background-color: rgb(26, 26, 26);
+}
+
+#navigation_space{
+    width: 30%;
+    height: 100%;
+}
+
+#navigation_logo{
+    width: 100px;
+    height: 100%;
+}
+
+
+#show{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: 0px;
+    flex-grow: 1;
+    background-color: rgb(240, 240, 240);
+}
+
+#show_roles_container{
+    width: 70%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#show_roles{
+    display: grid;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(50,300px 30px);
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    justify-items: center;
+    align-items: center;
+}
+
+#show_roles img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+#show_roles img:hover {
+    opacity: 1; /* 悬停时更清晰 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* 添加阴影 */
+    transform: scale(1.02); /* 轻微放大 */
+}
+
+#show_roles p {
+    max-width: 100%;
+    max-height: 100%;
+    font-weight: 500;
+    font-size: large;
+}
+
+
+#show_attributes_and_Light_Cones{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    width: 30%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#show_attributes{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    width: 100%;
+    height: 60%;
+}
+
+#show_role_Light_Cones{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
+#show_attributes p {
+    max-width: 100%;
+    max-height: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height:1.2;
+    white-space: pre;
+}
+
+#show_role_Light_Cones img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+#show_role_Light_Cones img:hover {
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
+
+
+

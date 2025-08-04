@@ -1,0 +1,10 @@
+currentUID : 当前登录玩家的uid
+
+current_Light_cone : 当前在角色页面展示的光锥名称
+
+current_role : 当前在角色页面展示的角色名称
+
+roles_imformation : 当前获取的角色表，以json格式存储
+
+Light_cones_data : 玩家所有的光锥集合
+

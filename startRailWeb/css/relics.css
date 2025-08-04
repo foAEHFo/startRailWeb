@@ -1,0 +1,299 @@
+body{
+    margin: 0px;
+}
+
+#home_root{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+#navigation_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #333;
+}
+
+#all_roles{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    color: rgb(236, 236, 236);
+    font-size: large;
+    cursor: pointer;
+}
+
+#all_roles:hover{
+    background-color: rgb(26, 26, 26);
+}
+
+#my_Relic{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    color: rgb(236, 236, 236);
+    font-size: large;
+    cursor: pointer;
+}
+#my_Relic:hover{
+    background-color: rgb(26, 26, 26);
+}
+
+#all_Light_Cones{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+    color: rgb(236, 236, 236);
+    font-size: large;
+    cursor: pointer;
+}
+#all_Light_Cones:hover{
+    background-color: rgb(26, 26, 26);
+}
+
+#show{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items:flex-start;
+    width: 100%;
+    height: 0px;
+    flex-grow: 1;
+    background-color: rgb(240, 240, 240);
+    overflow: hidden;
+}
+
+#show_relics_container{
+    width: 70%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#show_relics{
+    display: grid;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: repeat(100,150px);
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-items: center;
+    align-items: center;
+}
+
+#show_relics img{
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#show_relics img:hover{
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
+#show_funct{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    width: 30%;
+    height: 1000px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+#show_relic_information{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    /* 这里添加一个动画 */
+    transition: height 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#show_relic_information.collapsed {
+    height: 45px;
+}
+
+#show_relic_information:not(.collapsed) {
+    height: 550px;
+}
+
+#show_get_funct{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    height: 0px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#get_new_button{
+    width: 70%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 181, 246);
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#get_block{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width: 60%;
+    height: 200px;
+    background-color: rgb(252, 226, 205);
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#get_button{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    margin-top: 40px;
+    background-color: rgb(245, 215, 110);
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#come_back{
+    width: 70%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 107, 129);
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* 以下是遗器属性展示页面的样式 */
+
+#show_relic_information .relic-info-container {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.relic-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #f8d67a;
+    margin-bottom: 8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.relic-part {
+    font-size: 20px;
+    text-align: center;
+    color: #5cb8e6;
+    margin-bottom: 8px;
+}
+
+.relic-enhance {
+    font-size: 18px;
+    text-align: center;
+    color: #7cf67a;
+    font-weight: bold;
+    background-color: rgba(124, 246, 122, 0.15);
+    padding: 4px 12px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.attributes-container {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(92, 184, 230, 0.3);
+}
+
+.attribute-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.attribute-label {
+    color: #9f9fa0;
+    font-size: 16px;
+}
+
+.attribute-value {
+    color: #9f9fa0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.set-effect-container {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.set-name {
+    font-size: 18px;
+    color: #ff6b81;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.set-effect-item {
+    margin-bottom: 12px;
+    color: #b8c0e0;
+    line-height: 1.5;
+}
+
+.set-effect-item strong {
+    color: #a1a8c9;
+}
+
+

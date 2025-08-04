@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/relics.css">
+    <script type="module" src="./javaScript/relics.js"></script>
+    <title>遗器仓库</title>
+</head>
+
+<body>
+    <div id="home_root">
+        <div id="navigation_bar">
+            <div style="width: 15%;height: 100%;">
+                <img style="max-width: 95%;max-height: 95%;" src="./picture/star_rail_logo2.webp" alt="logo">
+            </div>
+            <div style="width: 55%;height: 100%;">
+            </div>
+            <div id="all_roles">
+                角色仓库
+            </div>
+            <div id="my_Relic">
+                遗器仓库
+            </div>
+            <div id="all_Light_Cones">
+                光锥仓库
+            </div>
+        </div>
+        <div id="show">
+            <div id="show_relics_container">
+                <div id="show_relics">
+                </div>
+            </div>
+
+            <div id="show_funct">
+                <div id="show_relic_information">
+                    <!-- 添加遗器的信息结构 -->
+                    <div class="collapsed-indicator" style="display:none;">遗器信息</div>
+                    <div class="relic-info-container" style="display: none;">
+                        <div class="relic-name"></div>
+                        <div class="relic-part"></div>
+                        <div class="relic-enhance">+15</div>
+
+                        <div class="attributes-container">
+                            <div class="attribute-row">
+                                <div class="attribute-label" style="font-size: 21px;color: #767676;"></div>
+                                <div class="attribute-value" style="font-size: 23px;color: #767676;"></div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label"></div>
+                                <div class="attribute-value"></div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label"></div>
+                                <div class="attribute-value"></div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label"></div>
+                                <div class="attribute-value"></div>
+                            </div>
+                            <div class="attribute-row">
+                                <div class="attribute-label"></div>
+                                <div class="attribute-value"></div>
+                            </div>
+                        </div>
+
+                        <div class="set-effect-container">
+                            <div class="set-name"></div>
+                            <div class="set-effect-item">
+
+                            </div>
+                            <div class="set-effect-item">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="show_get_funct">
+                    <div id="get_new_button">
+                        获取新遗器
+                    </div>
+                    <div
+                        style="width: 100%;height: 400px;display: flex;flex-direction: row;justify-content: center;align-items: center;">
+                        <div id="get_block">
+                            <select id="get_pack" style="width: 70%;margin-top: 30px;" >
+                                <option value="">请选择遗器套装</option>
+                            </select>
+                            <select id="get_body" style="width: 70%;margin-top: 30px;" >
+                                <option value="">请选择遗器部位</option>
+                                <option value="头部">头部</option>
+                                <option value="手部">手部</option>
+                                <option value="躯干">躯干</option>
+                                <option value="脚部">脚部</option>
+                            </select>
+                            <div id="get_button">
+                                点击获取
+                            </div>
+                        </div>
+                    </div>
+                    <div id="come_back">
+                        返回
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
