@@ -9,10 +9,10 @@ CORS(app)  # 允许跨域请求
 
 # 数据库配置
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '20050515ogy',
-    'database': 'star_rail'
+    'host': 'yourLocalhost',
+    'user': 'yourUser',
+    'password': 'yourPassword',
+    'database': 'yourDatabase'
 }
 
 def get_db_connection():
